@@ -30,3 +30,7 @@
 * [Docker 快速上手指南](public/guide/devops/docker_quick.md)
 * [阿里云 aliyun 使用注意事项](public/guide/devops/aliyun.md)
 * Fluentd 配置
+ 
+## 参与和贡献
+*  各部门人员如希望参与维护本文档库，请联系CTO[沈晟](mailto:tomasen@xindong.com)取得权限邀请。
+*  所有开放文档必须使用 Markdown 格式
