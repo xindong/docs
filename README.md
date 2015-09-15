@@ -14,9 +14,9 @@
 
 * [心动 show-my-ip 服务接口文档](public/services/show_my_ip.md)
 * [心动 httpdns 服务接口文档](public/services/httpdns.md)
-* AnySDK
-* 安全SDK
-* GMTool 后台管理工具
+* AnySDK (请向产品平台部索取)
+* 安全SDK (请向产品支撑部索取)
+* GMTool 后台管理工具 (请向核心数据部索取)
 
 ## 代码规范
 
@@ -29,7 +29,7 @@
 
 * [Docker 快速上手指南](public/guide/devops/docker_quick.md)
 * [阿里云 aliyun 使用注意事项](public/guide/devops/aliyun.md)
-* Fluentd 配置
+* Fluentd 日志汇集工具推荐配置 (请向核心数据部索取)
  
 ## 参与和贡献
 *  各部门人员如希望参与维护本文档库，请联系CTO[沈晟](mailto:tomasen@xindong.com)取得权限邀请。
