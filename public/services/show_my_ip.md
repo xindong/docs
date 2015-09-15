@@ -1,6 +1,6 @@
 # 心动 show-my-ip 服务接口文档
 
-本接口可以返回请求者的公网IP地址。有 http 和 tcp 两种调用形式：
+本接口可以返回请求者的公网IP地址。有 http 和 tcp 两种调用形式。
 
 ## APIs
 
@@ -12,8 +12,8 @@
 
 ## 测试 http 接口
 
-·curl http://myip.xdapp.com:1053/myip·
+  `curl http://myip.xdapp.com:1053/myip`
 
 ## 测试 tcp 接口
 
-`nc myip.xdapp.com 1154`
+  `nc myip.xdapp.com 1154`
