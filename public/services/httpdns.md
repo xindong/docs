@@ -1,6 +1,6 @@
 # 心动 httpdns 服务接口文档
 
-本接口可以查询特定域名对应的IP地址：
+本接口可以查询特定域名对应的IP地址。
 
 ## APIs
 
@@ -16,8 +16,8 @@
 
 ## 测试 http 接口
 
-·curl "http://httpdns.xdapp.com:1053/dns?d=tomasen.org"`
+	`curl "http://httpdns.xdapp.com:1053/dns?d=tomasen.org"`
 
 ## 测试 tcp 接口
 
-`printf "tomasen.org\n" | nc httpdns.xdapp.com 1153`
+	`printf "tomasen.org\n" | nc httpdns.xdapp.com 1153`
