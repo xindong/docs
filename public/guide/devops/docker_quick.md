@@ -23,23 +23,26 @@
 			`docker run -t -i -p 5022:22 -v ~/.ssh/authorized_keys:/home/centos/.ssh/authorized_keys tomasen/centos `
 			_其中：5022 是可以自定义的任意端口，authorized_keys 是开发者（你）的ssh公钥_
 
-* 通过 ssh 进入操作系统
+* 通过 ssh 进入容器命令行控制台
 	
-	此时可以通过下面命令登入
+	容器启动后，可以通过下面命令登入
 
 			`ssh -v centos@192.168.99.100 -p5022` 
 			_其中 192.168.99.100 是 Docker 所在的 IP (Mac 可以在Kitematic界面中的Port项下看到，\*nix则可以使用本机IP)_
 	
-* 你已经获得了一个容器环境，ssh进入系统后可以使用 yum 安装开发工具，例如：
+	ssh进入控制台界面后，可以使用 yum 安装开发工具等，如常部署开发环境，例如：
 
-		`yum groupinstall -y "Development Tools"`
+			`yum groupinstall -y "Development Tools"`
+			`yum groupinstall -y "Additional Development"`
 	
-		`yum groupinstall -y "Additional Development"`
+	如果 docker 启动时就通过 `-v` 命令将本地目录绑定至容器内，就可以在容器外进行代码编辑，同时在容器内编译和调试。例如：
 	
+			`docker run -t -i -p 5022:22 **-v ~/project/src:/src** -v ~/.ssh/authorized_keys:/home/centos/.ssh/authorized_keys tomasen/centos `
+			_可以将宿主设备上的`~/project/src`目录挂在至容器内的`/src`目录开始开发_
 
-## 制作上线的镜像
+## 制作上线镜像的方案
 
-* 在前述容器环境中部署应用后，再次通过 ssh 进入容器控制台
+* 在前述容器环境中编译或部署应用后，再次通过 ssh 进入容器控制台
 
 	修改 supervisord.conf 配置 将业务进程加入启动项
 
