@@ -2,14 +2,19 @@
 
 心动提供一个基础镜像。启动这个镜像并配置后即可 ssh 登陆 root 账号
 
+> - 安装下载镜像速度较慢时，可以考虑使用 [DaoCloud的加速服务](https://dashboard.daocloud.io/mirror)
+> - 本文中的docker使用和镜像制作方式仅为快速上手设计，并非最佳生产实践方式
+
 [TOC]
 
-## 安装开发环境客户端
+## 开发环境
+
+* 安装开发环境
 
 	* Mac OSX 下载地址 [Docker Toolbox](https://www.docker.com/toolbox)
 	* centos 下运行 `yum install -y docker` `service docker start`
 
-* 启动开发环境
+* 启动预定义容器
 
 	Mac 可以通过Docker Toolbox中的工具启动 Docker 终端
 	\*nix 则可以直接使用 docker 命令 
