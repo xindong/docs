@@ -21,3 +21,6 @@
 ## 测试 tcp 接口
 
 	`printf "tomasen.org\n" | nc httpdns.xdapp.com 1153`
+
+-
+_如需自行部署可以参考 [项目源代码](https://github.com/tomasen/httpdns)_
