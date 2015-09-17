@@ -1,4 +1,4 @@
-# JavaScript/TypeScript 代码规范
+### JavaScript/TypeScript 代码规范
 
 凡是可以用 TypeScript 的场景，均使用 TypeScipt 替代 Javascript。
 
