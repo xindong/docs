@@ -6,7 +6,7 @@
 
 | 端口 | 协议 | 请求 | 返回 |
 | ------ | ------ | ------ | ------ |
-| 1053 | http | http://myip.xdapp.com:1053/myip | 字符串，请求者的IP |
+| 1053 | http | http://myip.xdapp.com:1053/myip | 字符串类型，请求者的IP |
 | 1154 | tcp  | tcp://myip.xdapp.com:1154 | 字符串类型，请求者的IP + '\\n'，并关闭连接 |
 
 #### 测试 http 接口
