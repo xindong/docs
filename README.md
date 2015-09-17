@@ -4,7 +4,7 @@
 
 * [心动网络游戏后端架构 Guide Line](public/guide/backend.md)
 
-#### 评审（手机、网游）
+#### 评审（手机网络游戏）
 
 * [**手机前端** 评审要点](public/game_review/frontend.md)
 * [**后端** 评审要点](public/game_review/backend.md)
@@ -34,6 +34,6 @@
 * Fluentd 日志汇集工具推荐配置 (请向核心数据部索取)
  
 #### 参与和贡献文档
-* 各部门人员如希望参与维护本文档库，请联系CTO[沈晟](mailto:tomasen@xindong.com)取得权限邀请。
+* 各部门人员如希望参与维护本文档库，请联系CTO[沈晟](mailto:tomasen@xindong.com)取得权限邀请
 * 所有开放文档必须使用 Markdown 格式，保持简洁
 	* 禁止使用单\#或双\#。顶级条目至少使用3个井号，例如： `### 条目`
