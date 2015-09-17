@@ -54,7 +54,7 @@
 
 	修改 supervisord.conf 配置 将业务进程加入启动项
 
-* 使用 `docker ps` 找到当前容器ID（<CONTAINER ID>）后，依次执行下面指令，完成提交。
+* 使用 `docker ps` 找到当前容器ID（`<CONTAINER ID>`）后，依次执行下面指令，完成提交。
 
 	| 顺序 | 命令 | 说明 | 
 	| ---- | ---- | ---- | 
