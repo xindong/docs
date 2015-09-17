@@ -1,4 +1,4 @@
-# Go/Golang 代码规范
+### Go/Golang 代码规范
 
 代码提交前必须通过下列工具检测无报警：
 * [golint](https://github.com/golang/lint)
