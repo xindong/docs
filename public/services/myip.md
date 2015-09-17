@@ -1,4 +1,4 @@
-### 心动 show-my-ip 服务接口文档
+### 心动 myip 服务接口文档
 
 本接口可以返回请求者的公网IP地址。提供 http 和 tcp 两种调用形式。
 
@@ -18,3 +18,5 @@
 ```bash
 #nc myip.xdapp.com 1154
 ```
+
+_如需自行部署可以参考 [项目源代码](https://github.com/tomasen/httpdns)_
