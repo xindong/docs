@@ -14,9 +14,10 @@
 
 * [心动 show-my-ip 服务接口文档](public/services/show_my_ip.md)
 * [心动 httpdns 服务接口文档](public/services/httpdns.md)
-* AnySDK (请向产品平台部索取)
+* AnySDK (请向平台部索取)
 * 安全SDK (请向产品支撑部索取)
 * GMTool 后台管理工具 (请向核心数据部索取)
+* CDN接入说明 (请向平台部索取)
 
 #### 代码规范
 
