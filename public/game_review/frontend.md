@@ -32,5 +32,10 @@
 
 	用于快速定位bug，若版本不稳定可后迅速修正。可以使用例如 [BugSense](http://bugsense.com/) 或 [TestIn] 的服务
 
+* 接入 TalkingData 数据统计系统
+
+	用于第三方运营数据分析
+	
+
 #### 安全
 参考 [心动网络游戏安全评议要点](security.md)
