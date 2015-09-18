@@ -2,7 +2,7 @@
 
 #### 向导
 
-* [心动网络游戏后端架构 Guide Line](public/guide/backend.md)
+* [网络游戏后端架构 Guide Line](public/guide/backend.md)
 
 #### 评审（手机网络游戏）
 
@@ -12,8 +12,8 @@
 
 #### 服务
 
-* [心动 myip 服务接口文档](public/services/myip.md)
-* [心动 httpdns 服务接口文档](public/services/httpdns.md)
+* [MyIP 服务接口文档](public/services/myip.md)
+* [HTTPDNS 服务接口文档](public/services/httpdns.md)
 * AnySDK (请向平台部索取)
 * 安全SDK (请向产品支撑部索取)
 * GMTool 后台管理工具 (请向核心数据部索取)
