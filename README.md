@@ -33,6 +33,7 @@
 * [Dockerfile 基础篇](public/guide/devops/dockerfile_introduction.md)
 * [阿里云 aliyun 使用注意事项](public/guide/devops/aliyun.md)
 * [AWS 使用注意事项](public/guide/devops/aws.md)
+* [游戏内存修改器原理及游戏敏感数值加密思路](public/guide/memory_security.md)
 * Fluentd 日志汇集工具推荐配置 (请向核心数据部索取)
  
 #### 参与和贡献文档
