@@ -110,6 +110,7 @@
         }
         
   * 添加HTTP用户验证文件
+  
         # yum install -y httpd-tools
         # htpasswd -c /etc/nginx/docker-registry.htpasswd testuser
         
