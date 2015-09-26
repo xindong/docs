@@ -16,7 +16,7 @@
 	* [360加固宝](http://jiagu.360.cn/)
 	* [腾讯云应用加固](http://jiagu.qcloud.com/)
 	* [梆梆安全](http://bangcle.com/) 
-	* [爱加密](http://www.ijiami.cn)。
+	* [爱加密](http://www.ijiami.cn)
 	* [娜迦](http://www.nagain.com)
 	
 	_注意，防破解只是增加反向工程的难度，并不能因此忽视防内存篡改和通讯加密_
