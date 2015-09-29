@@ -35,6 +35,7 @@
         # docker pull centos:latest
         
   * 本地创建目录memcached，构建memcached容器镜像的Dockerfile与其他资源都存放于此目录
+ 
         # mkdir memcached
         # cd memcached
         
