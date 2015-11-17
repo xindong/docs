@@ -62,3 +62,7 @@
 	|2| `docker images` | 查看镜像列表，找到 <IMAGE ID> |
 	|3| `docker push <IMAGE ID>` | 将镜像提交至 registry |
 
+* 参考 Dockerfiles
+	[centos + sshd](./Dockerfiles/centos/)
+	[nodejs](https://github.com/nodejs/docker-node/blob/master/0.10/Dockerfile)
+	[golang](https://github.com/docker-library/golang/blob/master/1.5/Dockerfile)
