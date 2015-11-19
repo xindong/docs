@@ -11,7 +11,7 @@ fleet提供了可选的RestAPI管理集群和容器。
  
 #### 构建集群示例
 
- > - 系统: CoreOS Stable 最新版本
+ > - 系统环境: CoreOS Stable 最新版本
  > - 配置模式: cloud-config
  > - 系统用户: core
  > - 主机1: hostname=coreos001, ipaddr=192.168.0.1
