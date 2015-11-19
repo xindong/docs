@@ -6,6 +6,7 @@ fleet提供了可选的RestAPI管理集群和容器。
 
  > - fleet架构的详细介绍请参考: https://github.com/coreos/fleet/blob/master/Documentation/architecture.md
  > - etcd存储的详细介绍请参考：https://coreos.com/etcd/
+ > - etcd集群规模的优化请参考: https://coreos.com/etcd/docs/2.2.1/admin_guide.html
  > - fleet API v1文档: https://github.com/coreos/fleet/blob/master/Documentation/api-v1.md
  
 #### 构建集群示例
