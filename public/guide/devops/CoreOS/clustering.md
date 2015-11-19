@@ -72,6 +72,6 @@ fleet提供了可选的RestAPI管理集群和容器。
         # sudo systemctl restart fleet.socket
         # sudo systemctl start fleet.service
 
-  * 在开启TCP Socket的主机上访问fleet APi v1
+  * 在开启TCP Socket的主机上访问fleet API v1
   
         # curl -L http://127.0.0.1:3030/fleet/v1/machines
