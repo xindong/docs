@@ -32,6 +32,10 @@
 
 	用于快速定位bug，若版本不稳定可后迅速修正。可以使用例如 [BugSense](http://bugsense.com/) 或 [TestIn] 的服务
 
+* 多语言支持
+
+	有多语言支持机制
+
 * 接入 TalkingData 数据统计系统
 
 	用于第三方运营数据分析
