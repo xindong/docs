@@ -44,16 +44,16 @@
       
   * 提交unit file并且查看内容（注意：unit file被提交后无法被修改，只能删除后重新提交）
   
-        # fleetctl submit nginx.service
-        # fleetctl cat nginx.service
-        # fleectl start nginx
-        # fleetctl list-units | grep nginx.service
+        $ fleetctl submit nginx.service
+        $ fleetctl cat nginx.service
+        $ fleectl start nginx
+        $ fleetctl list-units | grep nginx.service
         UNIT		    MACHINE                 ACTIVE  SUB
         nginx.service   df515c36.../192.168.0.1	active	running
   
   * 查看nginx服务详细日志
       
-        # journalctl -u nginx.service
+        $ journalctl -u nginx.service
 
 #### 加载配置和部署代码
 
