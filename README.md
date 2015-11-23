@@ -27,8 +27,8 @@
 * PHP 代码规范
 
 #### 系统环境
-* [CoreOS Clustering] (public/guide/devops/CoreOS/clustering.md)
-* [Deploy container on CoreOS] (public/guide/devops/CoreOS/docker_container.md)
+* [CoreOS Clustering](public/guide/devops/CoreOS/clustering.md)
+* [Deploy container on CoreOS](public/guide/devops/CoreOS/docker_container.md)
 
 #### 资料
 
