@@ -55,7 +55,7 @@ fleet提供了可选的RestAPI管理集群和容器。
   * 查询coreos集群状态信息，在任一主机上执行以下命令验证
 
         $ fleetctl list-machines -l
-        MACHINE					IP		METADATA
+        MACHINE					            IP		        METADATA
         23f81afecc6b4a7597c77776cf66a387	192.168.0.3	-
         87c716357024495eabb713c2954031bb	192.168.0.1	-
         df515c3682aa43b4ae2b7d2168e17d38	192.168.0.2	-
