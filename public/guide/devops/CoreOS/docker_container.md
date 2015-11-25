@@ -1,4 +1,5 @@
-### CoreOS集群部署和管理Docker容器
+CoreOS集群部署和管理Docker容器
+====
 
   > - 本文的CoreOS集群基于fleet构建，详细请参考: https://github.com/xindong/docs/blob/master/public/guide/devops/CoreOS/clustering.md
   > - CoreOS集群内可以独立构建Docker Swarm，通过fleet部署的Docker容器支持无缝切换到Docker Swarm进行管理，而通过Docker Swarm部署的容器无法切换到fleet管理
