@@ -69,27 +69,27 @@ CoreOS集成了coreos-cloudinit程序，通过读取用户文件实现系统初�
             - name: sshd.service
               command: start
             # 设置系统时区
-              - name: localtime.service
-                command: start
-                content: |
-                  [Unit]
-                  Description=Set Local TimeZone
-          
-                  [Service]
-                  ExecStart=/usr/bin/timedatectl set-timezone Asia/Shanghai
-                  RemainAfterExits=yes
-                  Type=oneshot
+            - name: localtime.service
+              command: start
+              content: |
+                [Unit]
+                Description=Set Local TimeZone
+                
+                [Service]
+                ExecStart=/usr/bin/timedatectl set-timezone Asia/Shanghai
+                RemainAfterExits=yes
+                Type=oneshot
             # 设置网络，假定本地网卡名称是eth0
-              - name: 10-eth0.network
-                content: |
-                  [Match]
-                  Name=eth0
-
-                  [Network]
-                  Address=192.168.0.100/24
-                  Gateway=192.168.0.1
-                  DNS=8.8.8.8
-                  DNS=8.8.4.4
+            - name: 10-eth0.network
+              content: |
+                [Match]
+                Name=eth0
+    
+                [Network]
+                Address=192.168.0.100/24
+                Gateway=192.168.0.1
+                DNS=8.8.8.8
+                DNS=8.8.4.4
   
   * 检查cloud-config.yml文件格式
     
