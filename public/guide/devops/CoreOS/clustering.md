@@ -1,4 +1,5 @@
-### CoreOS集群管理
+CoreOS集群管理
+====
 
 CoreOS提供了分布式管理系统fleet，配合分布式K-V存储etcd构建集群，可在整个集群内批量部署/管理Docker容器。
 
