@@ -1,13 +1,12 @@
-### 构建私有Docker Registry
-
-  > - 系统环境：CentOS7.1 x86_64
-  > - 软件包：docker.x86_64，docker-registry.x86_64，nginx.x86_64
+构建私有Docker Registry
+====
+Docker Registry可以构建私有站点对Docker Images存储和管理
+> - 系统环境：CentOS7.1 x86_64
+> - 软件包：docker.x86_64，docker-registry.x86_64，nginx.x86_64
 
 #### 注意事项
-
-  * nginx.x86_64使用的是epel源
-  
-  * docker registry api的版本是v1
+> - nginx.x86_64使用的是epel源
+> - docker registry api的版本是v1
   
 #### 构建Docker Registry服务
 
