@@ -2,8 +2,8 @@
 ====
 
 CoreOS集成了coreos-cloudinit程序，通过读取用户文件实现系统初始化配置。
-> - cloud-config简单定义：可以被coreos-cloudinit读取并且执行的文件
 > - CoreOS的cloud-config文档：https://coreos.com/os/docs/latest/cloud-config.html
+> - cloud-config简单定义：可以被coreos-cloudinit读取并且执行的文件
 > - cloud-config使用`YAML`文件格式
 > - cloud-config内容的首行必须是`#cloud-config`（推荐）或者是`#!`（高级）
 > - 若是以`#cloud-config`开头，则必须使用以下键：
