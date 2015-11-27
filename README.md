@@ -32,6 +32,9 @@
 * [CoreOS Clustering](public/guide/devops/CoreOS/clustering.md)
 * [Deploy container on CoreOS](public/guide/devops/CoreOS/docker_container.md)
 
+#### 自动化部署
+* [Ansible Introduction](public/guide/devops/Ansible/introduction.md)
+
 #### 资料
 
 * [Docker 快速上手指南](public/guide/devops/docker_quick.md)
