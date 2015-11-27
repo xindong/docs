@@ -1,3 +1,6 @@
+CoreOS简介
+====
+
 #### 什么是CoreOS
 > - CoreOS is a minimal operating system that supports popular container systems out of the box. The operating system is designed to be operated in clusters. For example, it is engineered to be easy to boot via PXE and on most cloud providers.
 
