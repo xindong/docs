@@ -34,6 +34,7 @@
 
 #### 自动化部署
 * [Ansible Introduction](public/guide/devops/Ansible/introduction.md)
+* [Ansible Playbooks](public/guide/devops/Ansible/playbooks.md)
 
 #### 资料
 
