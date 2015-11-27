@@ -1,14 +1,14 @@
 CoreOS集群管理
 ====
 
-CoreOS提供了分布式管理系统fleet，配合分布式K-V存储etcd构建集群，可在整个集群内批量部署/管理Docker容器。
+CoreOS提供了分布式管理系统fleet，配合分布式Key-Value存储etcd构建集群，可在整个集群内批量部署/管理Docker容器。
 
-fleet提供了可选的RestAPI管理集群和容器。
+CoreOS集群构建的原理就是集群中每个节点上启动fleet将本地系统信息注册到etcd集群，之后任一节点上的fleet就能从etcd集群内获取到全部节点的信息。
 
  > - fleet架构的详细介绍请参考: https://github.com/coreos/fleet/blob/master/Documentation/architecture.md
  > - etcd存储的详细介绍请参考：https://coreos.com/etcd/
  > - etcd集群规模的优化请参考: https://coreos.com/etcd/docs/2.2.1/admin_guide.html
- > - fleet API v1文档: https://github.com/coreos/fleet/blob/master/Documentation/api-v1.md
+ > - fleet提供了可选的RestAPI管理集群和容器，请参考：https://github.com/coreos/fleet/blob/master/Documentation/api-v1.md
  
 #### 构建集群示例
 
