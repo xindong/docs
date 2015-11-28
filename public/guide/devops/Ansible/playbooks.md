@@ -174,11 +174,11 @@ Playbooks是Ansible的配置/部署/任务编排使用的语言。
         </body>
         </html>
         
-  * playbook支持`- include: another.yml`，可以写多份playbook，然后在main.yml中include其他playbook；
-    任务入口的playbook始终是main.yml<br/>
+  * playbook支持`- include: another.yml`，可以写多份playbook，然后在main.yml中include其他playbook<br/>
     playbook支持在定义任务时使用变量，执行时在group_vars里查找变量文件<br/>
-    playbook支持循环，参考：http://docs.ansible.com/ansible/playbooks_loops.html
-    
+    playbook支持循环，参考：http://docs.ansible.com/ansible/playbooks_loops.html<br/>
+    playbook支持条件判断，参考：http://docs.ansible.com/ansible/playbooks_conditionals.html
+   
   * 文件site.yml是全局playbook，定义了节点组和角色类型的对应关系
   
         ---
