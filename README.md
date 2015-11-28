@@ -29,6 +29,7 @@
 #### 系统环境
 * [CoreOS Introduction](public/guide/devops/CoreOS/introduction.md)
 * [Using Cloud-Config on CoreOS](public/guide/devops/CoreOS/cloud-config.md)
+* [Managing CoreOS With Ansible](public/guide/devops/CoreOS/management.md)
 * [CoreOS Clustering](public/guide/devops/CoreOS/clustering.md)
 * [Deploy container on CoreOS](public/guide/devops/CoreOS/docker_container.md)
 
