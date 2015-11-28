@@ -31,7 +31,7 @@
 * [Using Cloud-Config on CoreOS](public/guide/devops/CoreOS/cloud-config.md)
 * [Managing CoreOS With Ansible](public/guide/devops/CoreOS/management.md)
 * [CoreOS Clustering](public/guide/devops/CoreOS/clustering.md)
-* [Deploy container on CoreOS](public/guide/devops/CoreOS/docker_container.md)
+* [Deploy container on CoreOS](public/guide/devops/CoreOS/docker.md)
 
 #### 自动化部署
 * [Ansible Introduction](public/guide/devops/Ansible/introduction.md)
