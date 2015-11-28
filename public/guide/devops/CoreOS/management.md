@@ -14,18 +14,18 @@
 
 #### CoreOS安装python环境
 
-* 登录目标主机，在系统用户的~/.ssh/authorized_keys里添加用户主机的ssh public key
+  * 登录目标主机，在系统用户的~/.ssh/authorized_keys里添加用户主机的ssh public key
 
-* 用户主机安装ansible
+  * 用户主机安装ansible
 
         $ sudo pip install ansible
         $ ansible --verison
 
-* 用户主机上创建目录`ansible`
+  * 用户主机上创建目录`ansible`
   
         $ mkdir ~/ansible
 
-* 添加inventory file `hosts`，内容如下
+  * 添加inventory file `hosts`，内容如下
     
         # ~/ansible/hosts
         
@@ -37,12 +37,12 @@
         ansible_ssh_user=core
         ansible_python_interpreter="PATH=/home/core/bin:$PATH python"
         
-* 创建目录`roles`，并安装`defunctzombie.coreos-bootstrap`
+  * 创建目录`roles`，并安装`defunctzombie.coreos-bootstrap`
 
         $ mkdir ~/ansible/roles
         $ ansible-galaxy install defunctzombie.coreos-bootstrap -p ~/ansible/roles
         
-* 创建`bootstrap.yml`，内容如下:
+  * 创建`bootstrap.yml`，内容如下:
         
         ---
         # ~/ansible/bootstrap.yml
@@ -51,13 +51,13 @@
           roles:
             - bootstrap
             
-* 在目标主机上执行bootstrap playbook，CoreOS上通过pypy提供python环境
+  * 在目标主机上执行bootstrap playbook，CoreOS上通过pypy提供python环境
 
         $ ansible-playbook -i ~/ansible/hosts ~/ansible/bootstrap.yml
         
-* 目标主机的bootstrap完成后，系统用户目录下新增了bin和pypy目录
+  * 目标主机的bootstrap完成后，系统用户目录下新增了bin和pypy目录
 
-* 用户主机上检查目标主机的状态
+  * 用户主机上检查目标主机的状态
 
         $ ansible -i ~/ansible/hosts coreos.example.com -m ping
         $ ansible -i ~/ansible/hosts coreos.example.com -a 'uname -a'
@@ -66,11 +66,11 @@
   > - 首次安装后即可使用CoreOS部署容器服务，官方已经优化过系统参数。建议根据实际情况来加固系统安全
   > - 以下演示使用Ansible加固CoreOS的sshd服务（强烈推荐）
   
-* 用户主机创建目录`roles/common`，可以把基础系统的相关任务都归类到这个目录的playbook
+  * 用户主机创建目录`roles/common`，可以把基础系统的相关任务都归类到这个目录的playbook
 
         $ mkdir -p ~/ansible/roles/common/{tasks,handlers,files}
         
-* 创建playbook`roles/common/tasks/sshd.yml`，内容如下
+  * 创建playbook`roles/common/tasks/sshd.yml`，内容如下
 
         ---
         # ~/ansible/roles/common/tasks/sshd.yml
@@ -87,7 +87,7 @@
           service: name=sshd state=started enabled=yes
           tags: sshd
           
-* 创建playbook`roles/common/tasks/main.yml`，内容如下
+  * 创建playbook`roles/common/tasks/main.yml`，内容如下
 
         ---
         # ~/ansible/roles/common/tasks/main.yml
@@ -96,7 +96,7 @@
         - include: sshd.yml
     
 
-* 创建playbook`roles/common/handlers/main.yml`，内容如下
+  * 创建playbook`roles/common/handlers/main.yml`，内容如下
   
         ---
         # ~/ansible/roles/common/handlers/main.yml
@@ -104,7 +104,7 @@
         - name: reload sshd
           service: name=sshd state=reloaded
           
-* 创建配置文件`roles/common/files/sshd_config`，内容如下
+  * 创建配置文件`roles/common/files/sshd_config`，内容如下
 
         # Use most defaults for sshd configuration.
         UsePrivilegeSeparation sandbox
@@ -120,7 +120,7 @@
         AllowUsers core
 
           
-* 用户目录创建playbook`ansible/site.yml`，内容如下
+  * 用户目录创建playbook`ansible/site.yml`，内容如下
 
         ---
         # ~/ansible/site.yml
@@ -130,7 +130,7 @@
           roles:
             - common
 
-* 执行playbook`ansible/site.yml`，使目标主机上的服务生效（-t表示只运行对应tag的任务；-D表示显示文件内容差异；-C表示模拟运行，不会实际更改目标主机）<br/>
+  * 执行playbook`ansible/site.yml`，使目标主机上的服务生效（-t表示只运行对应tag的任务；-D表示显示文件内容差异；-C表示模拟运行，不会实际更改目标主机）<br/>
   <font color="green">建议每次执行前都先在参数上加上-DC</font>
 
         $ ansible-playbook -i ~/ansible/hosts ~/ansible/site.yml -t sshd -DC
@@ -140,9 +140,9 @@
   > - docker damon默认的socket文件是/var/run/docker.sock，只允许在本地使用Docker Remote API
   > - 以下演示使用Ansible通过systemd开启docker的TCP Socket
   
-* CoreOS上默认的Docker Socket在`/usr/lib/systemd/system/docker.socket`中定义，需要调整ListenStream属性
+  * CoreOS上默认的Docker Socket在`/usr/lib/systemd/system/docker.socket`中定义，需要调整ListenStream属性
 
-* 用户主机上创建playbook`roles/common/tasks/docker.yml`（docker是CoreOS默认自带的服务，可以把它归类为基础系统服务），内容如下
+  * 用户主机上创建playbook`roles/common/tasks/docker.yml`（docker是CoreOS默认自带的服务，可以把它归类为基础系统服务），内容如下
 
         ---
         # ~/ansible/roles/common/tasks/docker.yml
@@ -163,20 +163,20 @@
           notify: systemctl daemon-reload
           tags: docker
   
-* 在playbook`roles/common/handlers/main.yml`中添加如下内容
+  * 在playbook`roles/common/handlers/main.yml`中添加如下内容
 
         - name: systemctl daemon-reload
           command: /usr/bin/systemctl daemon-reload
     
-* 在playbook`roles/common/tasks/main.yml`中添加`- include: docker.yml`
+  * 在playbook`roles/common/tasks/main.yml`中添加`- include: docker.yml`
 
-* 执行playbook`ansible/site.yml`
+  * 执行playbook`ansible/site.yml`
   
         $ ansible-playbook -i ~/ansible/hosts ~/ansible/site.yml -t docker -DC
         $ ansible-playbook -i ~/ansible/hosts ~/ansible/site.yml
         $ ansible -i ~/ansible/hosts coreos.example.com -m shell -a 'sudo systemctl stop docker.service && sudo systemctl restart docker.socket && sudo systemctl start docker.service'
 
-* 在目标主机上验证Docker TCP Socket
+  * 在目标主机上验证Docker TCP Socket
 
         $ docker -H tcp://192.168.0.1:2375 info
 
@@ -185,7 +185,7 @@
   > - 建议安装CoreOS的服务器本地磁盘应该分为两种：系统盘和数据盘，非系统生成的数据应该全部写入数据盘内
   > - 以下演示使用Ansible通过systemd挂载文件系统
   
-* 用户主机上创建playbook`roles/common/tasks/mount.yml`，内容如下
+  * 用户主机上创建playbook`roles/common/tasks/mount.yml`，内容如下
 
         ---
         # ~/ansible/roles/common/tasks/mount.yml
@@ -219,7 +219,7 @@
           service: name=srv-www.mount state=started enabled=yes
           tags: mount
             
-* 创建文件`roles/common/files/srv-www.mount`，内容如下
+  * 创建文件`roles/common/files/srv-www.mount`，内容如下
 
         # ~/ansible/roles/common/files/srv-www.mount
         [Mount]
@@ -231,9 +231,9 @@
         [Install]
         WantedBy=multi-user.target
         
-* 在playbook`roles/common/tasks/main.yml`添加`- include: mount.yml`
+  * 在playbook`roles/common/tasks/main.yml`添加`- include: mount.yml`
 
-* 执行playbook`ansible/site.yml`
+  * 执行playbook`ansible/site.yml`
 
         $ ansible-playbook -i ~/ansbile/hosts ~/ansible/site.yml -t mount -DC
         $ ansible-playbook -i ~/ansbile/hosts ~/ansible/site.yml -t mount
