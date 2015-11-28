@@ -6,6 +6,7 @@ Playbooks是Ansible的配置/部署/任务编排使用的语言。
 > - Ansible modules是负责具体任务的工具，playbooks负责设计和安排如何使用这些工具
 > - Ansible playbooks的内容基于YAML语法
 > - Ansible playbooks的官方配置用例请参考：https://github.com/ansible/ansible-examples
+> - Ansible官方文档请参考：http://docs.ansible.com/ansible/index.html
 
 ### Ansible Playbooks配置用例说明
 > - 为了更好地理解Ansible playbooks的结构，此处将选用官方配置中的lamp_simple来做些简单的说明
