@@ -4,4 +4,3 @@
 
 * https://github.com/xindong/frontd
 * https://github.com/tomasen/httpdns
-* https://github.com/tomasen/myip
