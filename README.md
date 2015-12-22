@@ -23,6 +23,7 @@
 
 * [Docker 快速上手指南](public/guide/devops/docker_quick.md)
 * [构建私有Docker Registry](public/guide/devops/docker_registry.md)
+* [构建Private Docker Registry 2.0](public/guide/devops/docker_registry_v2.md)
 * [Dockerfile 基础篇](public/guide/devops/dockerfile_introduction.md)
 * [阿里云 aliyun 使用注意事项](public/guide/devops/aliyun.md)
 * [AWS 使用注意事项](public/guide/devops/aws.md)
