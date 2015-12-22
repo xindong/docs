@@ -6,7 +6,8 @@ Docker Registry可以构建私有站点对Docker Images存储和管理
 
 #### 注意事项
 > - nginx.x86_64使用的是epel源
-> - docker registry api的版本是v1，基于Python实现，已不推荐使用，详见https://github.com/docker/docker-registry.git
+> - docker registry api的版本是v1，基于Python实现，已不推荐使用，详见
+https://github.com/docker/docker-registry.git
   
 #### 构建Docker Registry服务
 
