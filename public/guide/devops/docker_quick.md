@@ -64,6 +64,6 @@
 
 * 参考 Dockerfiles
 
-	* [centos + sshd](./Dockerfiles/centos/)
+	* [centos + sshd](./Dockfiles/centos/)
 	* [nodejs](https://github.com/nodejs/docker-node/blob/master/0.10/Dockerfile)
 	* [golang](https://github.com/docker-library/golang/blob/master/1.5/Dockerfile)
