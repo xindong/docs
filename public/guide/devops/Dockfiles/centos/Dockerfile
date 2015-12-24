@@ -19,4 +19,4 @@ RUN systemctl enable sshd.service
 
 EXPOSE 22
 
-CMD [“/usr/sbin/init”]
+CMD ["/usr/sbin/init"]
