@@ -23,6 +23,7 @@
 * 使用HTTPDNS或提供类似地址查询服务来确保客户端获得正确所有网络入口IP
 
 	当DNS被污染或其他原因没有及时生效时，使用HTTPDNS或类似方式让客户端获得正确的服务端IP
+	可以使用[aliyun提供的httpdns服务](https://help.aliyun.com/document_detail/dpa/sdk/RESTful/httpdns.html)
 
 * 连接网络入口均有fallback机制并使用备用域名
 
