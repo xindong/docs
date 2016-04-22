@@ -34,7 +34,7 @@
 
 * 错误（Crash）日志收集机制
 
-	用于快速定位bug，若版本不稳定可后迅速修正。可以使用例如 [BugSense](http://bugsense.com/) 或 [TestIn] 的服务
+	用于快速定位bug，若版本不稳定可后迅速修正。可以使用例如 [Bugly](http://bugly.qq.com/)、[BugSense](http://bugsense.com/) 或 [TestIn] 的服务
 
 * 多语言支持
 
