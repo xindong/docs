@@ -9,6 +9,7 @@
 #### 向导
 
 * [网络游戏后端架构 Guide Line](public/guide/backend.md)
+* [游戏事故检查列表](public/guide/checklist.md)
 
 #### 服务
 
@@ -53,7 +54,7 @@
 * [Ansible Introduction](public/guide/devops/Ansible/introduction.md)
 * [Ansible Playbooks](public/guide/devops/Ansible/playbooks.md)
 
- 
+
 #### 参与和贡献文档
 * 各部门人员如希望参与维护本文档库，请联系CTO[沈晟](mailto:tomasen@xindong.com)取得权限邀请
 * 所有开放文档必须使用 Markdown 格式，保持简洁统一的风格
