@@ -16,6 +16,10 @@
 	要求这个网关在需要时可以水平扩展。可以自己开发网关，
 	也可以使用或基于  [心动网络游戏通用网关](https://github.com/xindong/frontd) 
 
+* 所有对外开放的端口都有提供健康监测的方法
+
+	包括TCP，并能区分显示 pretransfer/starttransfer/total time
+
 * 不依赖HTTP X-Forwarded-For 或TCP连接的对端IP地址来工作或统计
 
 	使用类似 [MyIP服务](../services/myip.md) 来由客户端获取自己公网IP后上传给服务端。服务端应该允许客户端IP异步上传，而不是登录和进入游戏的必要条件。
