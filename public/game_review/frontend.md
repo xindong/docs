@@ -51,9 +51,13 @@
 	- 有多语言文本、图片资源数据（表格）文件
 	- format 支持序号，例如 format("%[1]s name is %[2]s", "his", "john")
 
-* 接入心动数据SDK（或TalkingData） 数据统计系统，接入GM工具
+* 接入心动数据SDK（或TalkingData） 数据统计系统，接入G
 
 	用于运营数据分析和运营维护
+	
+* 权限要求
+	
+	向系统申请例如地理位置、发送通知、蓝牙权限、读取扩展卡等权限之前，需要先出现游戏内UI对需要的权限做说明，并且在获得用户同意后再申请权限
 	
 #### Google Play
 
@@ -65,7 +69,7 @@
 
 * 尽可能支持 Google Play Services ，例如成就和排行榜
 
-* 参考： (http://api.txwy.com/sdk_api/android/tw/#advanced-section-kb)
+* 参考： http://api.txwy.com/sdk_api/android/tw/#advanced-section-kb
 
 #### 安全
 参考 [心动网络游戏安全评议要点](security.md)
