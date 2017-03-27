@@ -55,6 +55,17 @@
 
 	用于运营数据分析和运营维护
 	
+#### Google Play
+
+* 不能要求不必要的权限
+
+* 返回按钮的功能应该是返回上一层UI、关闭弹窗或暂停游戏。而不是退出游戏
+
+* TargetSDK 为 23 或更高
+
+* 尽可能支持 Google Play Services ，例如成就和排行榜
+
+* 参考： (http://api.txwy.com/sdk_api/android/tw/#advanced-section-kb)
 
 #### 安全
 参考 [心动网络游戏安全评议要点](security.md)
