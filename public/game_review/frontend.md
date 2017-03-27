@@ -51,7 +51,7 @@
 	- 有多语言文本、图片资源数据（表格）文件
 	- format 支持序号，例如 format("%[1]s name is %[2]s", "his", "john")
 
-* 接入心动数据SDK（或TalkingData） 数据统计系统，接入G
+* 接入 TapDB 数据统计系统 SDK	
 
 	用于运营数据分析和运营维护
 	
