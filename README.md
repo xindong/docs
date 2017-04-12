@@ -13,13 +13,13 @@
 
 #### 服务
 
+* AnySDK (请与平台部对接)
+* GMTool Console 后台管理工具 (请与核心数据部对接)
+* 数据审计标准 (请与核心数据部对接)
+* 安全SDK (email: cto@xindong.com 索取，请注明项目并抄送运营确认)
+* CDN接入 (email: cto@xindong.com 索取，请注明项目并抄送运营确认)
 * [MyIP 服务接口文档](public/services/myip.md)
 * [HTTPDNS 服务接口文档](public/services/httpdns.md)
-* AnySDK (请向平台部索取)
-* 安全SDK (请向产品支撑部索取)
-* GMTool Console 后台管理工具 (请向核心数据部索取)
-* 数据审计标准 (请向核心数据部索取)
-* CDN接入说明 (请向CTO索取)
 
 #### 资料
 
@@ -57,6 +57,6 @@
 
 
 #### 参与和贡献文档
-* 各部门人员如希望参与维护本文档库，请联系CTO[沈晟](mailto:tomasen@xindong.com)取得权限邀请
+* 各部门人员如希望参与维护本文档库，请联系CTO[沈晟](mailto:cto@xindong.com)取得权限邀请
 * 所有开放文档必须使用 Markdown 格式，保持简洁统一的风格
 	* 禁止使用单\#或双\#。顶级条目至少使用3个井号，例如： `### 条目`
