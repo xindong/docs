@@ -2,9 +2,9 @@
 
 #### 手机游戏客户端/前端安全
 
-* 关键数据需要具备防内存篡改机制
+* 客户端如有服务端不验证或难以验证的数据，需要具备防内存篡改机制
 
-	手机游戏可参考 心动安全SDK(请向运营索取) 。
+	手机游戏可参考 心动安全SDK(可email索取: cto@xindong.com 请注明项目并抄送运营确认) 。
 
 * 客户端本地数据需要加密
 
@@ -16,25 +16,25 @@
 	* [娜迦](http://www.nagain.com)
 	* [360加固宝](http://jiagu.360.cn/)
 	* [腾讯云应用加固](http://jiagu.qcloud.com/)
-	* [梆梆安全](http://bangcle.com/) 
+	* [梆梆安全](http://bangcle.com/)
 	* [爱加密](http://www.ijiami.cn)
-	
+
 	_注意，防破解只是增加反向工程的难度，并不能因此忽视防内存篡改和通讯加密_
 
 #### 服务端/后端安全
 
 * 通讯协议需要具备防重发设计
- 
-	标准的做法是使用 nonce 设计。参考 [Wiki](https://en.wikipedia.org/wiki/Cryptographic_nonce) [中文](https://zh.wikipedia.org/wiki/Nonce)
+
+	推荐使用 nonce 。参考 [Wiki](https://en.wikipedia.org/wiki/Cryptographic_nonce) [中文](https://zh.wikipedia.org/wiki/Nonce)
 
 * 通讯内容需加密
 
 	加密强度和复杂度要高
 
-* 检测客户端是否使用加速齿轮
+* 防加速齿轮
 
-	根据心跳包的时间信息做出判断，并记录。定制定期惩罚的机制。
-	
+	心跳包中加入可靠的时间信息并做出判断。记录并定制定期惩罚的机制。
+
 * 通讯协议需具备校验通讯内容的机制
 
 	每个数据包附带校验码，防止篡改。
@@ -42,5 +42,3 @@
 #### 流程安全
 
 * 有白名单（IP和账号），更新有流程管理控制
-
-

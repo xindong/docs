@@ -8,8 +8,8 @@
 
 #### 向导
 
-* [网络游戏后端架构 Guide Line](public/guide/backend.md)
 * [游戏事故检查列表](public/guide/checklist.md)
+* [网络游戏后端架构 Guide Line](public/guide/backend.md)
 
 #### 服务
 
@@ -17,8 +17,9 @@
 * [HTTPDNS 服务接口文档](public/services/httpdns.md)
 * AnySDK (请向平台部索取)
 * 安全SDK (请向产品支撑部索取)
-* GMTool 后台管理工具 (请向核心数据部索取)
-* CDN接入说明 (请向平台部索取)
+* GMTool Console 后台管理工具 (请向核心数据部索取)
+* 数据审计标准 (请向核心数据部索取)
+* CDN接入说明 (请向CTO索取)
 
 #### 资料
 
