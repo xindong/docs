@@ -6,17 +6,10 @@
 
 | 端口 | 协议 | 请求 | 返回 |
 | ------ | ------ | ------ | ------ |
-| 1053 | http | http://myip.xdapp.com:1053/myip | 字符串类型，请求者的IP |
-| 1154 | tcp  | tcp://myip.xdapp.com:1154 | 字符串类型，请求者的IP + '\\n'，并关闭连接 |
+| 443 | https | https://myip.xindong.com/myip | 字符串类型，请求者的IP |
 
 #### 测试 http 接口
 ```bash
-#curl http://myip.xdapp.com:1053/myip
+#curl https://myip.xindong.com/myip
 ```
 
-#### 测试 tcp 接口
-```bash
-#nc myip.xdapp.com 1154
-```
-
-_如需自行部署可以参考 [项目源代码](https://github.com/tomasen/httpdns)_
