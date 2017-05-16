@@ -7,6 +7,7 @@
 | 端口 | 协议 | 请求 | 返回 |
 | ------ | ------ | ------ | ------ |
 | 443 | https | https://ip.xindong.com/myip | 字符串类型，请求者的IP |
+| 443 | https | https://ip.xindong.com/myloc | JSON格式，请求者的地区信息 |
 
 #### 测试 http 接口
 ```bash
