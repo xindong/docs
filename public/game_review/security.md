@@ -4,7 +4,7 @@
 
 * 客户端如有服务端不验证或难以验证的数据，需要具备防内存篡改机制
 
-	手机游戏可参考 心动安全SDK(email: cto@xindong.com 索取，请注明项目并抄送运营确认) 。
+	手机游戏可参考 心动安全SDK(email: cto@xindong.com 索取，请注明项目并抄送运营确认) 。也可以选择 http://gcloud.qq.com/product/mtp
 
 * 客户端本地数据需要加密
 
