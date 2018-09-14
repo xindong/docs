@@ -1,8 +1,3 @@
----
-layout: scaffold
-title: README
----
-
 # 心动网络 • 公开文档
 
 使用兼容 GitHub 的 Jekyll：[github-pages](https://github.com/github/pages-gem/)
