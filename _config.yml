@@ -17,8 +17,9 @@ title: X.D. Open Documents
 email: cto@xindong.com
 description: >- # this means to ignore newlines until "baseurl:"
     心动网络 • 公开文档
+repository: xindong/docs # for local usage
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://guidelines.xindong.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://docs.xindong.com" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: '/:categories/:title.html'
 twitter_username: xindong
 github_username:  xindong
