@@ -28,11 +28,11 @@ title: Home
              {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
              <small class="post-meta" style="color: #999; margin-left: 10px;">Updated on: {{ post.date | date: date_format }}</small>
          </h3>
+         <!--
          {%- if site.show_excerpts -%}
-           <div class="excerpt">{{ post.excerpt }}</div>
+           <div class="excerpt">{{ post.excerpt | escape }}</div>
          {%- endif -%}
-
-
+         -->
 		 {% for tag in post.tags %}
 			 <a class="tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
 		 {% endfor %}

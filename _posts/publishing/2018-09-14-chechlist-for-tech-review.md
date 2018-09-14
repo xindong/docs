@@ -5,6 +5,8 @@ date:   2018-09-14 19:07:00 +0800
 categories: ['publishing']
 ---
 
+*尚未完成*
+
 # 技术评审Checklist
 
 ## Game Framework
