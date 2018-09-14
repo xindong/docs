@@ -1,0 +1,13 @@
+.container-lg h2 {
+    border-style: none;
+}
+
+.post-content h1 {
+    font-size: 24px;
+    border-style: none;
+}
+
+.post-content h2 {
+    font-size: 20px;
+    border-style: none;
+}

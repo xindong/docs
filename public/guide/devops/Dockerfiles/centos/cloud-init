@@ -1,4 +1,0 @@
-centos ALL = NOPASSWD: ALL
-
-# User rules for user
-centos ALL=(ALL) NOPASSWD:ALL
