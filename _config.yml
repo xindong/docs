@@ -13,24 +13,46 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: X.D. Guidelines
+title: X.D. Documentations
 email: cto@xindong.com
 description: >- # this means to ignore newlines until "baseurl:"
-    心动网络 • 各项目管理指引手册
+    心动网络 • 公开文档
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://guidelines.xindong.com" # the base hostname & protocol for your site, e.g. http://example.com
-permalink: '/docs/:title.html'
+permalink: '/:categories/:title.html'
 twitter_username: xindong
 github_username:  xindong
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-primer
+#theme: jekyll-theme-primer
+remote_theme: xindong/jekyll-theme-primer
+#theme_color: red
 plugins:
-  - jekyll-feed
+  - jekyll-avatar                # https://github.com/benbalter/jekyll-avatar
+  - jekyll-coffeescript          # https://github.com/jekyll/jekyll-coffeescript
+  - jekyll-gist                  # https://github.com/jekyll/jekyll-gist
+  - jekyll-feed                  # https://github.com/jekyll/jekyll-feed
+  - jekyll-paginate              # https://github.com/jekyll/jekyll-paginate
+  - jekyll-mentions              # https://github.com/jekyll/jekyll-mentions
+  - jekyll-optional-front-matter # https://github.com/benbalter/jekyll-optional-front-matter
+#  - jekyll-readme-index          # https://github.com/benbalter/jekyll-readme-index
+  - jekyll-redirect-from         # https://github.com/jekyll/jekyll-redirect-from
+  - jekyll-relative-links        # https://github.com/benbalter/jekyll-relative-links
+  - jekyll-remote-theme          # https://github.com/benbalter/jekyll-remote-theme
+  - jekyll-seo-tag               # https://github.com/jekyll/jekyll-seo-tag
+  - jekyll-sitemap               # https://github.com/jekyll/jekyll-sitemap
+  - jekyll-swiss                 # https://github.com/broccolini/swiss
+  - jekyll-github-metadata       # https://github.com/jekyll/github-metadata
+  - jemoji                       # https://github.com/jekyll/jemoji
+#  - jekyll-category-pages
 timezone: Asia/Shanghai
 highlighter: rouge
 date_format: "%Y-%m-%d"
+#category_path: 'category'
+#category_layout: 'category_index.html'
+show_excerpts: true
+#paginate: 100
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
