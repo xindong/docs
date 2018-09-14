@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "心动网络 • 移动端游戏上线流程指引"
+title:  "移动端游戏上线流程指引"
 date:   2018-08-13 20:03:57 +0800
 categories: ['publishing']
 ---

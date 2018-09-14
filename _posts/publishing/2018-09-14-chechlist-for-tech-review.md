@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "心动网络 • 游戏发行技术评审Checklist"
+title:  "游戏发行技术评审Checklist"
 date:   2018-09-14 19:07:00 +0800
 categories: ['publishing']
 ---

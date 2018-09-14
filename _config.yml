@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: X.D. Documentations
+title: X.D. Open Documents
 email: cto@xindong.com
 description: >- # this means to ignore newlines until "baseurl:"
     心动网络 • 公开文档
