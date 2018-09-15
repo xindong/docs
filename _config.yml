@@ -27,7 +27,7 @@ github_username:  xindong
 # Build settings
 markdown: kramdown
 #theme: jekyll-theme-primer
-remote_theme: xindong/jekyll-theme-primer
+remote_theme: xdanger/jekyll-theme-notion
 #theme_color: red
 plugins:
   - jekyll-avatar                # https://github.com/benbalter/jekyll-avatar
