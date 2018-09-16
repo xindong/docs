@@ -1,7 +1,9 @@
+.DS_Store
 _site
 .sass-cache
 .jekyll-metadata
 .idea
 /assets/css/xindong.css
+/assets/css/notion.css
 /_layouts
 /_includes
