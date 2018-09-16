@@ -1,6 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+.idea
 /assets/css/xindong.css
 /_layouts
 /_includes
